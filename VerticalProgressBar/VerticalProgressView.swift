@@ -27,9 +27,13 @@ class VerticalProgressView: UIView {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
     }
      //Progress lies 0 -> 1
     func setProgress(progress: Float, animated: Bool) {
@@ -63,6 +67,7 @@ class VerticalProgressView: UIView {
             progressView.trackTintColor = newValue
         }
     }
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         self.addSubview(progressView)
@@ -78,6 +83,13 @@ class VerticalProgressView: UIView {
     }
     func rotateView() {
         self.transform = CGAffineTransform(rotationAngle: -(.pi * 0.5))
+    }
+    
+    func addCornerRadius(radius: CGFloat) {
+        self.layer.cornerRadius = (radius)
+        progressView.layer.cornerRadius = (radius)
+        progressView.layer.sublayers![1].cornerRadius = (radius)
+        progressView.subviews[1].clipsToBounds = true
     }
     override var intrinsicContentSize: CGSize{
         get {

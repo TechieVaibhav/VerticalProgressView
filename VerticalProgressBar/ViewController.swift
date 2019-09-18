@@ -18,10 +18,14 @@ class ViewController: UIViewController {
         verticalProgressBar.progress = 0.3
         verticalProgressBar.trackColor = UIColor.yellow
         verticalProgressBar.tintColor = UIColor.green
+        verticalProgressBar.addCornerRadius(radius: (verticalProgressBar.frame.size.height/2))
     }
     
     @IBAction func sliderValueChanged(_ sender: Any) {
-        verticalProgressBar.progress = slider.value
+        UIView.animate(withDuration: 0.2) {
+            self.verticalProgressBar.progress = self.slider.value
+        }
+        
     }
 }
 
