@@ -12,6 +12,7 @@
 		0860628E233219B00077CB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860628C233219B00077CB48 /* Main.storyboard */; };
 		08606290233219B10077CB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0860628F233219B10077CB48 /* Assets.xcassets */; };
 		08606293233219B10077CB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08606291233219B10077CB48 /* LaunchScreen.storyboard */; };
+		0860629B233219FE0077CB48 /* VerticalProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860629A233219FE0077CB48 /* VerticalProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0860628F233219B10077CB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08606292233219B10077CB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08606294233219B10077CB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0860629A233219FE0077CB48 /* VerticalProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0860628F233219B10077CB48 /* Assets.xcassets */,
 				08606291233219B10077CB48 /* LaunchScreen.storyboard */,
 				08606294233219B10077CB48 /* Info.plist */,
+				0860629A233219FE0077CB48 /* VerticalProgressView.swift */,
 			);
 			path = VerticalProgressBar;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0860629B233219FE0077CB48 /* VerticalProgressView.swift in Sources */,
 				0860628B233219B00077CB48 /* ViewController.swift in Sources */,
 				08606289233219B00077CB48 /* AppDelegate.swift in Sources */,
 			);
