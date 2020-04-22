@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         verticalProgressBar.progress = 0.3
-        verticalProgressBar.trackColor = UIColor.yellow
-        verticalProgressBar.tintColor = UIColor.green
+        verticalProgressBar.trackColor = UIColor.black.withAlphaComponent(0.4)
+        verticalProgressBar.tintColor = UIColor.white
         verticalProgressBar.addCornerRadius(radius: (verticalProgressBar.frame.size.height/2))
     }
     
